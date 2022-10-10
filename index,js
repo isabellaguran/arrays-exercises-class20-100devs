@@ -1,0 +1,50 @@
+// *Variables*
+// Declare a variable, reassign it to your favorite food, and alert the value
+let food = "soup"
+food = "noodles"
+alert (food)
+
+
+//Declare a variable, assign it a string, alert the second character in the string (Use your google-fu and the MDN)
+let str =" Beautiful day"
+//alert ( str[1] )
+alert (str.charAt(1))   //chartAt is a method that is build into JS specifically with strings that enables us to get characters 
+
+
+// *Functions*
+// Create a function that takes in 3 numbers. Divide the first two numbers and multiply the last. Alert the product. Call the function.
+function prod(n1,n2,n3){
+    let num1 = (n1/n2) * n3
+    alert (num1)
+}
+prod(1,2,3)    //important step 
+
+
+// Create a function that takes in 1 number. Console log the cube root of the number. Call the function.
+
+function cool(num1){
+    console.log(Math.cbrt(num1).toFixed(4)) //toFixed(4) so we have 4 decimal numbers in that number not too many decimals
+}
+cool(2)
+
+
+// *Conditionals*
+//Create a function that takes in a month. If it is a summer month alert "YAY". If another other month, alert "Booo"
+function month(nameMonth){
+    let monthLowerCase = month.toLowerCase()
+   if(monthLowerCase === 'june' || monthLowerCase === 'july' || monthLowerCase === 'august' ){
+    alert("YAY")
+   }else{
+    alert ("Booo")
+   }
+}
+
+//*Loops*
+//Create a function that takes in a number. Console log every number from 1 to that number while skipping multiples of 5.
+function nomb(zebra){
+    for (i=; i <= nomb; i++){
+       if(i % 5!== 0){   // !== does not equal ALSO i being 1,2,3,4 will be printed but hwn i===5 will not be printed
+       console.log(i)
+       }
+    }
+}
